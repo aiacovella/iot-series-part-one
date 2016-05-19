@@ -42,4 +42,4 @@ class Settings(system: ExtendedActorSystem) extends Extension {
 
 }
 
-case class DeviceConfiguration(id:String)
+final case class DeviceConfiguration(id:String)

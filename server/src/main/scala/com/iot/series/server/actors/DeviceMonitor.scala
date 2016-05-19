@@ -101,8 +101,8 @@ object DeviceMonitor {
       def deviceId: String
     }
 
-    case class DeviceDataReceived(deviceId: String, value: BigDecimal, timeStamp: Instant) extends MonitorEvent
-    case class MonitoringInitialized(deviceId: String) extends MonitorEvent
+    final case class DeviceDataReceived(deviceId: String, value: BigDecimal, timeStamp: Instant) extends MonitorEvent
+    final case class MonitoringInitialized(deviceId: String) extends MonitorEvent
 
   }
 
